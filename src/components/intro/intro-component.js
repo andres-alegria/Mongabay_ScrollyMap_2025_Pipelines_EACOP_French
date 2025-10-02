@@ -23,7 +23,7 @@ const Intro = ({ title, subtitle, date, social, height }) => {
           {date && (
             <div className="text-xs font-bold text-white flex items-center mb-6">
               <span className={separatorClasses} />
-              <span className="font-bold uppercase px-1">{`${t('Published')} ${t(date)}`}</span>
+              <span className="font-bold uppercase px-1">{`${t('Publié')} ${t(date)}`}</span>
               <span className={separatorClasses} />
             </div>
           )}
@@ -34,7 +34,7 @@ const Intro = ({ title, subtitle, date, social, height }) => {
             <Arrow className="arrow-animate opacity-75 fill-current w-3 mb-1/2" />
             <Arrow className="arrow-animate opacity-75 fill-current w-3" />
           </div>
-          {t('scroll down to discover')}
+          {t('faites défiler vers le bas pour découvrir')}
         </div>
         {social && <SocialIcons social={social} className="absolute bottom-0 left-0 ml-3 mb-3" />}
       </div>
