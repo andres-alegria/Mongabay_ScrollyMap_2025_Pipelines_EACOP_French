@@ -1,25 +1,25 @@
 const { REACT_APP_MAPBOX_ACCESS_TOKEN } = process.env;
 
 export default {
-  style: 'mapbox://styles/mongabay/cmdyt9fxl005a01qzb0d4das5',
+  style: 'mapbox://styles/mongabay/cmfgilapc000p01sd9z7878oo',
   accessToken: REACT_APP_MAPBOX_ACCESS_TOKEN,
   showMarkers: false,
   theme: 'mongabay',
   intro: {
-    title: 'M-Sand',
+    title: 'Clearing the Way',
     subtitle:
-      'When one ban triggers another crisis: how Kerala’s river sand mining ban is leading to more quarrying in the Western Ghats.',
-    date: 'Sept. 05 2025',
+      'Satellite data show that hundreds of square kilometers of bush and farmland have been cleared along the route of the controversial East African Crude Oil Pipeline.',
+    date: 'Sept. 18 2025',
     social: [
       {
         name: 'twitter',
         src: 'twitter.svg',
-        href: 'https://x.com/MongabayIndia',
+        href: 'https://x.com/Mongabay',
       },
       {
         name: 'facebook',
         src: 'facebook.svg',
-        href: 'https://www.facebook.com/MongabayIndia/',
+        href: 'https://www.facebook.com/Mongabay/',
       },
     ],
   },
@@ -28,480 +28,551 @@ export default {
       name: 'mongabay',
       src: 'mongabaylogo.png',
       width: '140',
-      href: 'https://india.mongabay.com',
-    },
-    {
-      name: 'vizzuality',
-      src: 'vizzualitylogo.png',
-      width: '100',
-      href: 'https://vizzuality.com',
+      href: 'https://news.mongabay.com',
     },
   ],
   alignment: 'left',
-  footer: 'Cartography by Andrés Alegría for Mongabay.',
+  footer: 'Cartography by Andrés Alegría | Edited by Terna Gyuse',
   chapters: [
+
+    // chapter 1
     {
-      id: 'first chapter',
+      id: 'chapter 1',
       alignment: 'left',
       hidden: false,
-      title: 'Placeholder text',
-      description:
-        'Placeholder text.',
-      legend: [
+      title: 'Weaving a dangerous web',
+      description: "New oil pipelines are putting some of the planet’s last biodiversity strongholds — and many Indigenous lands — at risk.",
+       legend: [
         {
-          title: 'Placeholder text',
-          icon: 'plane',
+          title: 'Global network of oil/gas pipelines',
+          fromLayer: 'Pipelines existing',
         },
       ],
-      sources:
-        "Placeholder text.",
+      sources: 'Global Energy Monitor',
       location: {
-        center: [77.20, 10.75],
-        zoom: 6.5,
-        pitch: 30.0,
-        bearing: 60,
+        center: [31.5, 1.25],
+        zoom: 1.8,
+        pitch: 0.0,
+        bearing: 0,
       },
-      mapAnimation: 'flyTo',
-      rotateAnimation: false,
-      callback: '',
-      onChapterEnter: [
-        {
-          layer: 'peruvian-amazon-20241002t1750-dlalbv copy',
-          opacity: 0.5,
-        },
-        {
-          layer: 'airstrips-10224-dozgmq',
-          opacity: 1,
-        },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
-          opacity: 0,
-        },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 1',
-          opacity: 0,
-        },
-        {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: 'peruvian-amazon-20241002t1750-dlalbv copy',
-          opacity: 0,
-        },
-      ],
-    },
-    {
-      id: 'second-chapter',
-      alignment: 'right',
-      hidden: false,
-      title: 'Placeholder text',
       images: [
         {
           src: 'Photo1.jpg',
           position: 'top',
-          title: 'Placeholder text',
-          author: 'Placeholder text',
+          title: 'Oil/Gas Pipeline',
+          author: 'R. Naik',
         },
       ],
-      description:
-        'Placeholder text.',
-      legend: [
-        {
-          title: 'Placeholder text',
-          icon: 'coca',
-        },
-      ],
-      sources: "Placeholder text",
-      location: {
-        center: [77.20, 10.75],
-        zoom: 6.5,
-        pitch: 40.0,
-        bearing: 60,
-      },
-      mapAnimation: 'flyTo',
+      mapAnimation: 'easeTo',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
         {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 1,
+          layer: 'Pipeline_icons',
+          opacity: 0,
         },
         {
-          layer: 'airstrips-10224-dozgmq',
-          opacity: 1,
+          layer: 'Satellite_2025',
+          opacity: 0,
+        },
+                  {
+          layer: 'Satellite_2023',
+          opacity: 0,
         },
         {
-          layer: 'territorios-indigenas-0lu5ni copy',
+          layer: 'wdpas-2025-Murchison',
+          opacity: 0,
+        },
+               {
+          layer: 'wdpas-2025-Murchison fill',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-climate-stabilization',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-potential-corridors',
+          opacity: 0,
+        },
+        {
+          layer: 'wdpas-2025',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals',
+          opacity: 0,
+        },
+          {
+          layer: 'admin-0-boundary-disputed',
+          opacity: 0,
+        },  
+          {
+          layer: 'admin-0-boundary-a',
+          opacity: 0,
+        },  
+          {
+          layer: 'admin-0-boundary-b',
+          opacity: 0,
+        },  
+         {
+          layer: 'wdpas-2025 color threatend',
           opacity: 0,
         },
       ],
-      onChapterExit: [
-        {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 0,
-        },
+        onChapterExit: [
+          {
+          layer: 'admin-0-boundary-a',
+          opacity: 1,
+        },  
+          {
+          layer: 'admin-0-boundary-b',
+          opacity: 1,
+        },  
       ],
+    
     },
+
+
+    // chapter 2
     {
-      id: 'third-chapter',
-      alignment: 'fully',
-      hidden: false,
-      title: 'Placeholder text',
-      description:
-          'Placeholder text.',
-      legend: [
-        {
-          title: 'Placeholder text',
-          color: '#de6363',
-          pattern: 'LINEPATTERN',
-        },
-      ],
-      sources: 'Placeholder text',
-      location: {
-        center: [77.20, 10.75],
-        zoom: 6.5,
-        pitch: 20.0,
-        bearing: 60,
-      },
-      mapAnimation: 'flyTo',
-      rotateAnimation: false,
-      callback: '',
-      onChapterEnter: [
-        {
-          layer: 'territorios-indigenas-0lu5ni copy',
-          opacity: 1,
-        },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
-          opacity: 0,
-        },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 1',
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: 'territorios-indigenas-0lu5ni copy',
-          opacity: 0.75,
-        },
-      ],
-    },
-    {
-      id: 'fourth-chapter',
-      alignment: 'fully',
-      hidden: false,
-      title: 'Placeholder text',
-      images: [
-        {
-          src: 'Photo1.jpg',
-          position: 'top',
-          title: 'Placeholder text',
-          author: 'Placeholder text',
-        },
-      ],
-      description:
-        'Placeholder text.',
-      legend: [
-        {
-          title: 'Placeholder text',
-          color: '#ccefb8',
-        },
-      ],
-      sources: 'Placeholder text',
-      location: {
-        center: [77.20, 10.75],
-        zoom: 7.5,
-        pitch: 30.0,
-        bearing: 60,
-      },
-      mapAnimation: 'flyTo',
-      rotateAnimation: false,
-      callback: '',
-      onChapterEnter: [
-        {
-          layer: 'deforestationthreeregions-dcthbg',
-          opacity: 1,
-        },
-        {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 0.5,
-        },
-      ],
-      onChapterExit: [],
-    },
-    {
-      id: 'fifth-chapter',
-      alignment: 'fully',
-      hidden: false,
-      title: 'Placeholder text',
-      description:
-        'Placeholder text.',
-      location: {
-        center: [77.20, 10.75],
-        zoom: 6.5,
-        pitch: 60.0,
-        bearing: 50,
-      },
-      mapAnimation: 'flyTo',
-      rotateAnimation: false,
-      callback: '',
-      onChapterEnter: [
-        {
-          layer: 'deforestationthreeregions-dcthbg',
-          opacity: 1,
-        },
-        {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: .5,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 0,
-        },
-      ],
-    },
-    {
-      id: 'sixth-chapter',
+      id: 'chapter 2',
       alignment: 'left',
       hidden: false,
-      title: 'Placeholder text',
-      images: [
+      title: 'EACOP',
+      description: "The East African Crude Oil Pipeline (EACOP) will run 1,443 kilometers (897 miles) from Uganda's newly developed oil fields on Lake Albert to the Tanzanian port of Tanga.",
+             legend: [
         {
-          src: 'Photo1.jpg',
-          position: 'top',
-          title: 'Placeholder text',
-          author: 'Placeholder text',
+          title: 'Existing pipelines',
+          fromLayer: 'Pipelines existing',
         },
-      ],
-      description:
-        'Placeholder text.',
+             {
+          title: 'Under construction or proposed pipelines',
+          fromLayer: 'Pipelines under construction',
+        },
+         ],
       location: {
-        center: [77.20, 10.75],
-        zoom: 6.5,
-        pitch: 30.0,
-        bearing: 50,
+        center: [36.0, -2.8],
+        zoom: 4.2,
+        pitch: 0.0,
+        bearing: 0,
       },
-      mapAnimation: 'flyTo',
+     
+      mapAnimation: 'easeTo',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
-        {
-          layer: 'deforestationthreeregions-dcthbg',
+                  {
+          layer: 'admin-0-boundary-a',
           opacity: 1,
-        },
-        {
-          layer: 'territorios-indigenas-0lu5ni copy',
+        },  
+          {
+          layer: 'admin-0-boundary-b',
           opacity: 1,
-        },
+        },  
       ],
-      onChapterExit: [],
+        onChapterExit: [
+        {
+          layer: 'Pipeline_icons',
+          opacity: 0,
+        },
+        {
+          layer: 'Satellite_2025',
+          opacity: 0,
+        },
+                  {
+          layer: 'Satellite_2023',
+          opacity: 0,
+        },
+        {
+          layer: 'wdpas-2025-Murchison',
+          opacity: 0,
+        },
+                     {
+          layer: 'wdpas-2025-Murchison fill',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-climate-stabilization',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-potential-corridors',
+          opacity: 0,
+        },
+        {
+          layer: 'wdpas-2025',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals',
+          opacity: 0,
+        },
+          {
+          layer: 'admin-0-boundary-disputed',
+          opacity: 0,
+        },  
+         {
+          layer: 'wdpas-2025 color threatend',
+          opacity: 0,
+        },          
+      ],
+    
     },
+
+
+    // chapter 3
     {
-      id: 'seventh-chapter',
-      alignment: 'right',
+      id: 'chapter 3',
+      alignment: 'left',
       hidden: false,
-      title: 'Placeholder text',
-      images: [
+      title: 'Where pipelines meet critical ecosystems',
+      description: "Construction and operation of oil infrastructure risks irreversible damage to critical wildlife habitat, water bodies and farmland.The pipeline and its 2-km (1.2-mi) buffer zone are impacting more than 100,000 people and dozens of formal protected areas, starting with the wellheads and feeder lines in and around Murchison Falls National Park.",
+             legend: [
         {
-          src: 'Photo1.jpg',
-          position: 'top',
-          title: 'APlaceholder text',
-          author: 'Placeholder text',
+          title: 'Critical areas based on the Global Safety Net Initiative (GSN)',
+          color: '#006a54',
         },
-      ],
-      description:
-        'Placeholder text.',
+         ],
+      sources: 'GSN',
       location: {
-        center: [77.20, 10.75],
-        zoom: 4.5,
-        pitch: 30.0,
-        bearing: 60,
+        center: [31.506, -1.5],
+        zoom: 5.6,
+        pitch: 0.0,
+        bearing: 0,
       },
-      mapAnimation: 'flyTo',
+     
+      mapAnimation: 'easeTo',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
         {
-          layer: 'deforestationthreeregions-dcthbg',
+          layer: 'GSN-climate-stabilization',
           opacity: 1,
         },
         {
-          layer: 'territorios-indigenas-0lu5ni copy',
+          layer: 'GSN-potential-corridors',
           opacity: 1,
         },
         {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
-          opacity: 0,
-        }
-      ],
-      onChapterExit: [
+          layer: 'wdpas-2025',
+          opacity: 1,
+        },
         {
-          layer: 'territorios-indigenas-0lu5ni copy',
+          layer: 'GSN-intact-wilderness-areas',
+          opacity: 1,
+        },
+        {
+          layer: 'GSN-high-biodiversity',
+          opacity: 1,
+        },
+        {
+          layer: 'GSN-large-mammals',
+          opacity: 1,
+        },
+      ],
+        onChapterExit: [
+                  {
+          layer: 'wdpas-2025 color threatend',
           opacity: 0,
         },
       ],
+    
     },
+    
+
+    // chapter 4
     {
-      id: 'eighth-chapter',
-      alignment: 'fully',
+      id: 'chapter 4',
+      alignment: 'left',
       hidden: false,
-      title: 'Placeholder text',
-      images: [
+      title: 'Protected areas under threat',
+      description: "By July 2025, nine wellpads and 38 km (23.6 mi) of roads had been constructed in the park. Campaigners have reported disturbances to elephants and other wildlife in the park and raised fears over a pipeline crossing the Nile River in a Ramsar-listed wetland that is a refuge for endangered species like the shoebill stork (<i>Balaeniceps rex</i>).",
+             legend: [
         {
-          src: 'Photo1.jpg',
+          title: 'Protected areas affected by EACOP',
+          color: '#bdeaaf',
+        },
+         ],
+       sources: 'Earth Insight',
+     images: [
+        {
+          src: 'photo2.jpg', 
           position: 'top',
-          title: 'Placeholder text',
-          author: 'Placeholder text',
+          title: 'Shoebill storks',
+          author: 'K. Marino',
         },
-      ],
-      description:
-        'Placeholder text.',
-      legend: [
-        {
-          title: 'Placeholder text',
-          color: '#66f7ff',
-        },
-      ],
-      sources: "Placeholder text",
+      ],  
       location: {
-        center: [77.20, 10.75],
-        zoom: 4.5,
-        pitch: 60.0,
-        bearing: 30,
+        center: [31.506, -1.5],
+        zoom: 5.6,
+        pitch: 0.0,
+        bearing: 0,
       },
-      mapAnimation: 'flyTo',
+     
+      mapAnimation: 'easeTo',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
-        {
-          layer: 'deforestationthreeregions-dcthbg',
+         {
+          layer: 'GSN-climate-stabilization',
           opacity: 0,
         },
         {
-          layer: 'coca-crops-density-20241002t1-55l40t',
+          layer: 'GSN-potential-corridors',
           opacity: 0,
         },
         {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
-          opacity: 0.75,
+          layer: 'wdpas-2025',
+          opacity: 0,
         },
         {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 1',
-          opacity: 0.75,
+          layer: 'GSN-intact-wilderness-areas',
+          opacity: 0,
         },
         {
-          layer: 'territorios-indigenas-0lu5ni copy',
+          layer: 'GSN-high-biodiversity',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals',
           opacity: 0,
         },
       ],
-      onChapterExit: [],
+        onChapterExit: [
+            {
+          layer: 'wdpas-2025 color threatend',
+          opacity: 1,
+        },
+                         {
+          layer: 'wdpas-2025-Murchison',
+          opacity: 0,
+        },
+                     {
+          layer: 'wdpas-2025-Murchison fill',
+          opacity: 0,
+        },
+                {
+          layer: 'Satellite_2025',
+          opacity: 0,
+        },
+                  {
+          layer: 'Satellite_2023',
+          opacity: 0,
+        },
+      ],
+    
     },
+    
+        
+    // chapter 5
     {
-      id: 'ninth-chapter',
-      alignment: 'right',
+      id: 'chapter 5',
+      alignment: 'left',
       hidden: false,
-      title: 'Placeholder text',
-      images: [
+      title: 'National treasure',
+      description: "Every year, more than 100,000 tourists visit Murchison Falls National Park, Uganda's oldest and largest protected area, to see elephants, lions, giraffes and numerous endemic species, generating income for the government and nearby communities.",
+             legend: [
         {
-          src: 'Photo1.jpg',
-          position: 'top',
-          title: 'Placeholder text',
-          author: 'Placeholder text',
+          title: 'Murchison Falls National Park',
+     // fromLayer: 'wdpas-2025-Murchison',
+            border: '#c3a7c5',
         },
-      ],
-      description:
-        'Placeholder text.',
+         ],
+     sources: 'Satellite image from Copernicus',       
       location: {
-        center: [77.20, 10.75],
-        zoom: 5.5,
-        pitch: 20.0,
-        bearing: 40,
+        center: [31.45, 2.175],
+        zoom: 10.75,
+        pitch: 0.0,
+        bearing: 0,
       },
-      mapAnimation: 'flyTo',
+     
+      mapAnimation: 'easeTo',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
-        {
-          layer: 'deforestationthreeregions-dcthbg',
+                          {
+          layer: 'wdpas-2025 color',
           opacity: 0,
         },
-        {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 0.75,
+                 {
+          layer: 'wdpas-2025-Murchison',
+          opacity: 1,
         },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
-          opacity: 0.75,
+                     {
+          layer: 'wdpas-2025-Murchison fill',
+          opacity: 0.2,
         },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 1',
-          opacity: 0.75,
+                  {
+          layer: 'Satellite_2023',
+          opacity: 1,
         },
-        {
-          layer: 'territorios-indigenas-0lu5ni copy',
+      ],
+        onChapterExit: [
+                 {
+          layer: 'Satellite_2025',
+          opacity: 1,
+        },
+             {
+          layer: 'Pipeline_icons',
           opacity: 0,
         },
       ],
-      onChapterExit: [],
+    
     },
+    
+      
+    // chapter 6
     {
-      id: 'tenth-identifier',
-      alignment: 'fully',
+      id: 'chapter 6',
+      alignment: 'left',
       hidden: false,
-      title: 'Rivers and roads',
-      images: [
+      title: 'Worrying footprint',
+      description: "Unnecessary risk.",
+           legend: [
         {
-          src: 'Photo1.jpg',
-          position: 'top',
-          title: 'Placeholder text',
-          author: 'Placeholder text',
+          title: 'Tilenga Feeder Pipeline Trajectory',
+          icon: 'pipeline',
+        },
+         ],
+      sources: 'Satellite image from Copernicus',
+      location: {
+        center: [31.45, 2.175],
+        zoom: 10.75,
+        pitch: 0.0,
+        bearing: 0,
+      },
+     
+      mapAnimation: 'easeTo',
+      rotateAnimation: false,
+      callback: '',
+      onChapterEnter: [
+                          {
+          layer: 'wdpas-2025 color',
+          opacity: 0,
+        },
+                 {
+          layer: 'wdpas-2025-Murchison',
+          opacity: 1,
+        },
+                     {
+          layer: 'wdpas-2025-Murchison fill',
+          opacity: 0.2,
+        },
+                  {
+          layer: 'Satellite_2023',
+          opacity: 0,
         },
       ],
-      description:
-        'Placeholder text.',
+        onChapterExit: [
+                      {
+          layer: 'Pipeline_icons',
+          opacity: 1,
+        },
+                 {
+          layer: 'Satellite_2025',
+          opacity: 1,
+        },
+      ],
+    
+    },
+       
+   
+   
+      
+    // chapter 7
+    {
+      id: 'chapter 7',
+      alignment: 'left',
+      hidden: false,
+      title: 'Unnecessary risk',
+      description: "This East African pipeline dispossesses thousands of people, threatens vital water supplies and puts sensitive ecosystems at risk — its carbon footprint will be 25 times the combined annual emissions of Tanzania and Uganda.",
       location: {
-        center: [77.20, 10.15],
-        zoom: 6.5,
-        pitch: 20.0,
-        bearing: 30,
+        center: [31.506, -1.5],
+        zoom: 5.6,
+        pitch: 0.0,
+        bearing: 0,
       },
-      mapAnimation: 'flyTo',
+     
+      mapAnimation: 'easeTo',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
         {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 1,
+          layer: 'Pipeline_icons',
+          opacity: 0,
         },
         {
-          layer: 'airstrips-10224-dozgmq',
-          opacity: 1,
+          layer: 'Satellite_2025',
+          opacity: 0,
+        },
+                  {
+          layer: 'Satellite_2023',
+          opacity: 0,
         },
         {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
-          opacity: 0.75,
+          layer: 'wdpas-2025-Murchison',
+          opacity: 0,
+        },
+               {
+          layer: 'wdpas-2025-Murchison fill',
+          opacity: 0,
         },
         {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 1',
-          opacity: 0.75,
+          layer: 'GSN-climate-stabilization',
+          opacity: 0,
         },
         {
-          layer: 'territorios-indigenas-0lu5ni copy',
-          opacity: 1,
+          layer: 'GSN-potential-corridors',
+          opacity: 0,
         },
-      ],
-      onChapterExit: [
         {
-          layer: 'coca-crops-density-20241002t1-55l40t',
+          layer: 'wdpas-2025',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals',
+          opacity: 0,
+        },
+          {
+          layer: 'admin-0-boundary-disputed',
+          opacity: 0,
+        },  
+         {
+          layer: 'wdpas-2025 color threatend',
           opacity: 0,
         },
       ],
+        onChapterExit: [
+      ],
     },
+       
+       
+   
+
   ],
 };
