@@ -6,10 +6,10 @@ export default {
   showMarkers: false,
   theme: 'mongabay',
   intro: {
-    title: 'Clearing the Way',
+    title: 'Ouverture du passage',
     subtitle:
-      'Satellite data show that hundreds of square kilometers of bush and farmland have been cleared along the route of the controversial East African Crude Oil Pipeline.',
-    date: 'Sept. 18 2025',
+      'Les données satellites montrent que des centaines de kilomètres carrés de brousse et de terres agricoles ont été défrichés le long du tracé du controversé oléoduc d’Afrique de l’Est.',
+    date: '18 sept. 2025',
     social: [
       {
         name: 'twitter',
@@ -32,7 +32,7 @@ export default {
     },
   ],
   alignment: 'left',
-  footer: 'Cartography by Andrés Alegría | Edited by Terna Gyuse',
+  footer: "Cartographie d'Andrés Alegría | Edité par Terna Gyuse",
   chapters: [
 
     // chapter 1
@@ -40,11 +40,11 @@ export default {
       id: 'chapter 1',
       alignment: 'left',
       hidden: false,
-      title: 'Weaving a dangerous web',
-      description: "New oil pipelines are putting some of the planet’s last biodiversity strongholds — and many Indigenous lands — at risk.",
+      title: 'Le tissage d’une toile dangereuse',
+      description: "Les nouveaux oléoducs mettent en péril certains des derniers bastions de biodiversité (et des terres autochtones) de la planète.",
        legend: [
         {
-          title: 'Global network of oil/gas pipelines',
+          title: 'Un réseau mondial d’oléoducs et de gazoducs',
           fromLayer: 'Pipelines existing',
         },
       ],
@@ -59,7 +59,7 @@ export default {
         {
           src: 'Photo1.jpg',
           position: 'top',
-          title: 'Oil/Gas Pipeline',
+          title: 'Oléoduc/gazoduc',
           author: 'R. Naik',
         },
       ],
@@ -148,14 +148,14 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'EACOP',
-      description: "The East African Crude Oil Pipeline (EACOP) will run 1,443 kilometers (897 miles) from Uganda's newly developed oil fields on Lake Albert to the Tanzanian port of Tanga.",
+      description: "L’oléoduc d’Afrique de l’Est (EACOP) s’étendra sur 1 443 km, depuis les champs pétrolifères nouvellement développés du lac Albert jusqu’au port tanzanien de Tanga.",
              legend: [
         {
-          title: 'Existing pipelines',
+          title: 'Oléoducs existants',
           fromLayer: 'Pipelines existing',
         },
              {
-          title: 'Under construction or proposed pipelines',
+          title: 'Construction d’oléoducs prévue ou en cours',
           fromLayer: 'Pipelines under construction',
         },
          ],
@@ -242,11 +242,11 @@ export default {
       id: 'chapter 3',
       alignment: 'left',
       hidden: false,
-      title: 'Where pipelines meet critical ecosystems',
-      description: "Construction and operation of oil infrastructure risks irreversible damage to critical wildlife habitat, water bodies and farmland.The pipeline and its 2-km (1.2-mi) buffer zone are impacting more than 100,000 people and dozens of formal protected areas, starting with the wellheads and feeder lines in and around Murchison Falls National Park.",
+      title: 'Quand les oléoducs rencontrent des écosystèmes cruciaux',
+      description: "La construction et l’exploitation des infrastructures pétrolières risquent de causer des dommages irréversibles aux habitats naturels essentiels, aux plans d’eau et aux terres agricoles. L’oléoduc et sa zone tampon de 2 km affectent plus de 100 000 personnes ainsi que des dizaines d’aires protégées officielles, avec un impact particulièrement marqué au niveau des têtes de puits et des conduites d’amenée situées dans et autour du parc national Murchison Falls.",
              legend: [
         {
-          title: 'Critical areas based on the Global Safety Net Initiative (GSN)',
+          title: 'Aires cruciales selon l’initiative Global Safety Net (GSN)',
           color: '#006a54',
         },
          ],
@@ -302,11 +302,11 @@ export default {
       id: 'chapter 4',
       alignment: 'left',
       hidden: false,
-      title: 'Protected areas under threat',
-      description: "By July 2025, nine wellpads and 38 km (23.6 mi) of roads had been constructed in the park. Campaigners have reported disturbances to elephants and other wildlife in the park and raised fears over a pipeline crossing the Nile River in a Ramsar-listed wetland that is a refuge for endangered species like the shoebill stork (<i>Balaeniceps rex</i>).",
+      title: 'Des aires protégées menacées',
+      description: "En juillet 2025, neuf sites de forage et 38 km de routes avaient été construits dans le parc. Les militants ont signalé des perturbations chez les éléphants et d’autres animaux sauvages dans le parc et ont exprimé leurs inquiétudes concernant le passage de l’oléoduc sur le Nil, dans une zone humide inscrite à la convention de Ramsar, qui sert de refuge à des espèces menacées telles que le bec-en-sabot du Nil (<i>Balaeniceps rex</i>).",
              legend: [
         {
-          title: 'Protected areas affected by EACOP',
+          title: 'Aires protégées affectées par l’EACOP',
           color: '#bdeaaf',
         },
          ],
@@ -315,7 +315,7 @@ export default {
         {
           src: 'photo2.jpg', 
           position: 'top',
-          title: 'Shoebill storks',
+          title: 'Bec-en-sabot du Nil',
           author: 'K. Marino',
         },
       ],  
@@ -386,16 +386,16 @@ export default {
       id: 'chapter 5',
       alignment: 'left',
       hidden: false,
-      title: 'National treasure',
-      description: "Every year, more than 100,000 tourists visit Murchison Falls National Park, Uganda's oldest and largest protected area, to see elephants, lions, giraffes and numerous endemic species, generating income for the government and nearby communities.",
+      title: 'Un trésor national',
+      description: "Chaque année, ce sont plus de 100 000 touristes qui visitent le parc national Murchison Falls, l’aire protégée la plus vaste et la plus ancienne d’Ouganda, pour y voir des éléphants, des lions, des girafes, et d’autres espèces endémiques, générant ainsi des revenus pour le gouvernement et les communautés voisines.",
              legend: [
         {
-          title: 'Murchison Falls National Park',
+          title: 'Parc national Murchison Falls',
      // fromLayer: 'wdpas-2025-Murchison',
             border: '#c3a7c5',
         },
          ],
-     sources: 'Satellite image from Copernicus',       
+     sources: 'Image satellite capturée par le programme Copernicus',       
       location: {
         center: [31.45, 2.175],
         zoom: 10.75,
@@ -443,15 +443,15 @@ export default {
       id: 'chapter 6',
       alignment: 'left',
       hidden: false,
-      title: 'Worrying footprint',
-      description: "Unnecessary risk.",
+      title: 'Une empreinte inquiétante',
+      description: "Un risque inutile.",
            legend: [
         {
-          title: 'Tilenga Feeder Pipeline Trajectory',
+          title: 'Trajectoire de l’oléoduc d’amenée de Tilenga',
           icon: 'pipeline',
         },
          ],
-      sources: 'Satellite image from Copernicus',
+      sources: 'Image satellite capturée par le programme Copernicus',
       location: {
         center: [31.45, 2.175],
         zoom: 10.75,
@@ -501,8 +501,8 @@ export default {
       id: 'chapter 7',
       alignment: 'left',
       hidden: false,
-      title: 'Unnecessary risk',
-      description: "This East African pipeline dispossesses thousands of people, threatens vital water supplies and puts sensitive ecosystems at risk — its carbon footprint will be 25 times the combined annual emissions of Tanzania and Uganda.",
+      title: 'Un risque inutile',
+      description: "L’oléoduc d’Afrique de l’Est dépossède des milliers de personnes, menace des réserves d’eau vitales et met en danger des écosystèmes fragiles. On estime que son empreinte carbone sera équivalente à 25 fois les émissions totales actuelles de la Tanzanie et de l’Ouganda.",
       location: {
         center: [31.506, -1.5],
         zoom: 5.6,
